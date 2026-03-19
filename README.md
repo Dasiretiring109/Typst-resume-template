@@ -19,7 +19,15 @@ Typst-resume-template/
 - `typ/with_profile_picture.typ`：有头像，信息完整。
 - `typ/resume_classic_with_photo.typ`：有头像，偏传统版式。
 
-## 5 分钟使用流程（最简单）
+## 模板效果预览
+
+<p align="center">
+  <img src="images/no_profile_picture_page_1.png" alt="无头像模板预览" width="32%">
+  <img src="images/with_profile_picture_page_1.png" alt="有头像模板预览" width="32%">
+  <img src="images/resume_classic_with_photo_page_1.png" alt="经典有头像模板预览" width="32%">
+</p>
+
+## 5 分钟使用流程
 
 1. 安装 VS Code。
 2. 在 VS Code 扩展里安装 `Tinymist Typst`。
@@ -29,7 +37,7 @@ Typst-resume-template/
 6. 如果要头像，把头像文件放到 `images/` 目录，文件名建议保持 `image.png`。
 7. 在 Typst 预览里导出 PDF，并保存到 `pdf/` 目录。
 
-## 头像放置规则（很重要）
+## 头像放置规则
 
 - 推荐路径：`images/image.png`
 - 模板里头像写法应为：
