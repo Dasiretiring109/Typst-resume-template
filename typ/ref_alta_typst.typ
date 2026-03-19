@@ -14,41 +14,67 @@
 #let skill(name, rating) = [
   #name
   #h(1fr)
-  #for i in range(5) [
+  #for i in range(2) [
     #circle(radius: 3.2pt, fill: if i < rating { linkc } else { rgb("#c0c0c0") })
-    #if i < 4 [#h(1.4pt)]
+    #if i < 1 [#h(1.4pt)]
   ]
 ]
 
-#text(2em, weight: "bold")[王知行]
+#text(2em, weight: "bold")[高松灯]
 \
-#text(0.92em)[wzx\@example.com · +86 139-6666-2222 · github.com/wzx]
+#text(0.92em)[gaosongdeng\@163.com · 138XXXX8899 · 北京市 · github.com/gaosongdeng-rl]
 \
-后端 / 平台工程师，擅长高并发服务与可观测性建设。
+运动控制算法工程师（强化学习方向）
 
 #columns(2, gutter: 14pt)[
-  == Experience
-  *某智能制造企业*\
-  _Senior Engineer_ #h(1fr) 2022 -- Present
-  - 负责设备数据平台后端与任务调度服务。
-  - 推动可观测性改造，告警误报率下降 35%。
+  == 基本信息
+  - 学校：北京理工大学
+  - 学历：本科
+  - 求职意向：运动控制算法工程师（强化学习方向）
 
-  == Projects
-  *设备日志中台* #h(1fr) 2024
-  - 构建采集、清洗、检索全链路。
-  - 支持按产线和设备型号快速筛查问题。
+  == 实习经历
+  *北京智元机器人科技有限公司*\
+  _运动控制算法实习生（RL方向）_ #h(1fr) 2023.07 -- 2023.09
+  - 基于Isaac Gym搭建四足机器人强化学习训练环境，优化PPO奖励函数，越障成功率提升35%。
+  - 参与仿真到实机迁移，结合域随机化与系统辨识，将动作误差从12%降至5%。
+  - 参与RL+前馈复合控制架构实现，负责关节力矩控制模块，动态行走能耗降低18%。
 
-  == Skills
-  #skill("Go", 5)\
-  #skill("Kubernetes", 4)\
-  #skill("PostgreSQL", 4)\
-  #skill("Python", 3)
+  == 项目经历
+  *机器人RL动态步态生成与抗扰动控制* #h(1fr) 2023.03 -- 2023.06
+  - 设计分层奖励函数，训练效率提升40%。
+  - 实机在15°斜坡和5cm凸起砂石路稳定性达92%，较传统方案提升45%。
 
-  == Education
-  *浙江大学*\
-  软件工程 · 本科 #h(1fr) 2016 -- 2020
+  *人形机器人AMP的人体运动复刻与泛化* #h(1fr) 2022.09 -- 2023.02
+  - 处理1000+帧动捕数据，动作复刻相似度达95%。
+  - 域自适应后在0.2-0.8摩擦系数地面成功率从70%提升至90%。
+
+  *RL+PID复合控制的机械臂柔顺装配系统* #h(1fr) 2022.03 -- 2022.08
+  - 基于SAC优化PID调节策略，装配力控制误差从±5N降至±1N。
+  - 轴承压装合格率从85%提升至98%，Jetson Xavier NX部署延迟≤10ms。
+
+  == 专业技能
+  #skill("强化学习算法", 5)\
+  #skill("仿真开发", 5)\
+  #skill("控制部署", 4)\
+  #skill("工程协同", 4)
+  - PPO、SAC、TD3、DDPG；掌握奖励函数设计与训练稳定性调优
+  - Isaac Gym、MuJoCo、PyTorch、URDF/MJCF建模、并行训练
+  - RL+PID/前馈/MPC复合控制，ONNX/TensorRT加速，Jetson实时部署
+  - 熟悉EtherCAT/CANopen通讯，可完成算法与伺服驱动/传感器对接
+
+  == 教育背景
+  *北京理工大学*\
+  机器人工程 · 本科 #h(1fr) 2020.09 -- 2024.06
+  - GPA 3.8 / 4.0（专业前5%），综测前8%（2/25）
+  - 核心课程：机器人运动学与动力学、强化学习原理与应用、现代控制理论、深度学习、多刚体动力学、最优控制、机器人仿真技术
+
+  == 荣誉证书
+  - 2023.10 全国大学生机器人竞赛（RoboMaster）机甲大师赛，国家级二等奖
+  - 2023.05 北京市大学生机械创新设计大赛，省级一等奖
+  - 2022.12 北京理工大学“优秀科研创新奖”，校级
+  - 2022.06 北京理工大学机器人控制算法竞赛，院级一等奖
 
   == Links
-  #text(fill: linkc)[github.com/wzx]\
-  #text(fill: linkc)[linkedin.com/in/wzx]
+  #link("https://github.com/gaosongdeng-rl")[#text(fill: linkc)[github.com/gaosongdeng-rl]]\
+  #link("https://blog.csdn.net/gaosongdeng_rl")[#text(fill: linkc)[blog.csdn.net/gaosongdeng_rl]]
 ]

@@ -2,33 +2,64 @@
 #show link: underline
 
 #set page(margin: (x: 0.95cm, y: 1.25cm))
-#set text(font: ("Linux Biolinum", "Noto Sans CJK SC", "DejaVu Sans"), size: 10.3pt, lang: "en")
+#set text(font: ("Linux Biolinum", "Noto Sans CJK SC", "DejaVu Sans"), size: 10.3pt, lang: "zh")
 #set par(justify: true)
 
 #let chiline() = { v(-3pt); line(length: 100%); v(-5pt) }
 
-= Alex Chen
-alex\@example.com | #link("https://github.com/alex")[github.com/alex] | #link("https://alex.dev")[alex.dev]
+= 高松灯
+gaosongdeng\@163.com | #link("https://github.com/gaosongdeng-rl")[github.com/gaosongdeng-rl] | 138XXXX8899 | 北京市
 
-== Education
+== 基本信息
 #chiline()
-*ShanghaiTech University* #h(1fr) 2018/09 -- 2022/06\
-Computer Science #h(1fr) Shanghai, CN
-- GPA 3.8/4.0, Outstanding Graduate
+- 求职意向：运动控制算法工程师（强化学习方向）
+- 学校：北京理工大学；学历：本科（机器人工程）
 
-== Work Experience
+== 教育背景
 #chiline()
-*Acme Data* #h(1fr) 2023/01 -- Present\
-Backend Engineer #h(1fr) Remote
-- Built and maintained event-driven ingestion services.
-- Reduced data pipeline reprocessing cost by 35%.
+*北京理工大学* #h(1fr) 2020.09 -- 2024.06\
+机器人工程（本科） #h(1fr) 北京
+- GPA 3.8 / 4.0（专业前5%），综测前8%（2/25）
+- 核心课程：机器人运动学与动力学、强化学习原理与应用、现代控制理论、深度学习、多刚体动力学、最优控制、机器人仿真技术
 
-== Projects
+== 实习经历
 #chiline()
-*Feature Flag Platform* #h(1fr) 2024/03 -- 2024/12\
-Go + React #h(1fr) Team project
-- Designed rollout, rollback, and audit flows for product teams.
-- Added SLA dashboards and alert routing.
+*北京智元机器人科技有限公司* #h(1fr) 2023.07 -- 2023.09\
+运动控制算法实习生（RL方向） #h(1fr) 北京
+- 基于Isaac Gym搭建四足机器人强化学习训练环境，优化PPO奖励函数，越障成功率提升35%。
+- 参与仿真到实机迁移，结合域随机化与系统辨识，将动作误差从12%降至5%。
+- 参与RL+前馈复合控制架构实现，负责关节力矩控制模块，动态行走能耗降低18%。
+
+== 项目经历
+#chiline()
+*机器人RL动态步态生成与抗扰动控制* #h(1fr) 2023.03 -- 2023.06\
+算法负责人 #h(1fr) 项目
+- 设计分层奖励函数，训练效率提升40%。
+- 实机在15°斜坡和5cm凸起砂石路稳定性达92%，较传统方案提升45%。
+
+*人形机器人AMP的人体运动复刻与泛化* #h(1fr) 2022.09 -- 2023.02\
+核心开发 #h(1fr) 项目
+- 处理1000+帧动捕数据，动作复刻相似度达95%。
+- 域自适应后在0.2-0.8摩擦系数地面成功率从70%提升至90%。
+
+*RL+PID复合控制的机械臂柔顺装配系统* #h(1fr) 2022.03 -- 2022.08\
+算法开发 #h(1fr) 项目
+- 基于SAC优化PID调节策略，装配力控制误差从±5N降至±1N。
+- 轴承压装合格率从85%提升至98%，Jetson Xavier NX部署延迟≤10ms。
+
+== 专业技能
+#chiline()
+- 强化学习：PPO、SAC、TD3、DDPG；掌握奖励函数设计与训练稳定性调优
+- 仿真开发：Isaac Gym、MuJoCo、PyTorch、URDF/MJCF建模、并行训练
+- 控制部署：RL+PID/前馈/MPC复合控制，ONNX/TensorRT加速，Jetson实时部署
+- 工程协同：熟悉EtherCAT/CANopen通讯，可完成算法与伺服驱动/传感器对接
+
+== 荣誉证书
+#chiline()
+- 2023.10 全国大学生机器人竞赛（RoboMaster）机甲大师赛，国家级二等奖
+- 2023.05 北京市大学生机械创新设计大赛，省级一等奖
+- 2022.12 北京理工大学“优秀科研创新奖”，校级
+- 2022.06 北京理工大学机器人控制算法竞赛，院级一等奖
 
 #h(1fr)
 #align(center, text(fill: gray)[Last Updated: Mar 2026])

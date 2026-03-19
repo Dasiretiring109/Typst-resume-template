@@ -24,11 +24,11 @@
 )
 
 #block(fill: theme, inset: (x: 0.75em, y: 0.65em), radius: 0.35em)[
-  #text(white, 1.85em, weight: "bold")[陈雨航]
+  #text(white, 1.85em, weight: "bold")[高松灯]
   #linebreak()
-  #text(white, [全栈工程师 · 5 年经验 · 上海])
+  #text(white, [运动控制算法工程师（强化学习方向） · 北京市])
   #linebreak()
-  #text(white, [chenyh\@example.com · 138-8888-6666 · github.com/chenyh])
+  #text(white, [gaosongdeng\@163.com · 138XXXX8899 · github.com/gaosongdeng-rl])
 ]
 
 #v(0.6em)
@@ -36,28 +36,46 @@
   columns: (1.1fr, 1.6fr),
   column-gutter: 0.7em,
   panel("技能", [
-    #badge("Go") #h(0.2em) #badge("TypeScript") #h(0.2em) #badge("Rust") #h(0.2em) #badge("Python")
+    #badge("PPO") #h(0.2em) #badge("SAC") #h(0.2em) #badge("TD3") #h(0.2em) #badge("DDPG")
     #v(0.35em)
-    #badge("Kubernetes") #h(0.2em) #badge("PostgreSQL") #h(0.2em) #badge("Redis")
+    #badge("Isaac Gym") #h(0.2em) #badge("MuJoCo") #h(0.2em) #badge("PyTorch")
+    #v(0.35em)
+    #badge("ONNX/TensorRT") #h(0.2em) #badge("Jetson") #h(0.2em) #badge("EtherCAT/CANopen")
   ]),
-  panel("个人简介", [
-    长期负责中后台与平台化建设，擅长把复杂需求拆成可交付模块，重视代码质量和团队协作效率。
+  panel("基本信息", [
+    学校：北京理工大学（机器人工程，本科）\
+    GPA 3.8/4.0（专业前5%），综测前8%（2/25）\
+    核心课程：机器人运动学与动力学、强化学习原理与应用、现代控制理论、深度学习、多刚体动力学、最优控制、机器人仿真技术
   ]),
 )
 
 #v(0.45em)
 #panel("项目精选", [
-  *统一任务编排平台* #h(1fr) #text(fill: rgb("#64748b"))[2024]
-  - 支持 DAG 任务编排、失败重试和 SLA 告警。
-  - 调度模块重构后，失败任务恢复效率提升约 52%。
+  *机器人RL动态步态生成与抗扰动控制* #h(1fr) #text(fill: rgb("#64748b"))[2023.03 - 2023.06]
+  - 算法负责人；设计分层奖励函数，训练效率提升40%。
+  - 实机在15°斜坡和5cm凸起砂石路稳定性达92%，较传统方案提升45%。
 
-  *简历自动生成服务* #h(1fr) #text(fill: rgb("#64748b"))[2023]
-  - 提供模板化渲染能力，支持多语言和多版式输出。
+  *人形机器人AMP的人体运动复刻与泛化* #h(1fr) #text(fill: rgb("#64748b"))[2022.09 - 2023.02]
+  - 核心开发；处理1000+帧动捕数据，动作复刻相似度达95%。
+  - 域自适应后在0.2-0.8摩擦系数地面成功率从70%提升至90%。
+
+  *RL+PID复合控制的机械臂柔顺装配系统* #h(1fr) #text(fill: rgb("#64748b"))[2022.03 - 2022.08]
+  - 算法开发；基于SAC优化PID调节策略，装配力控制误差从±5N降至±1N。
+  - 轴承压装合格率从85%提升至98%，Jetson Xavier NX部署延迟≤10ms。
 ])
 
 #v(0.45em)
-#panel("工作经历", [
-  *某 AI 创业公司* · 资深工程师 #h(1fr) #text(fill: rgb("#64748b"))[2022 - 至今]
-  - 负责知识库系统后端与权限域模型。
-  - 推动接口标准化，跨团队联调周期缩短 30%+。
+#panel("实习经历", [
+  *北京智元机器人科技有限公司* · 运动控制算法实习生（RL方向） #h(1fr) #text(fill: rgb("#64748b"))[2023.07 - 2023.09]
+  - 基于Isaac Gym搭建四足机器人强化学习训练环境，优化PPO奖励函数，越障成功率提升35%。
+  - 参与仿真到实机迁移，结合域随机化与系统辨识，将动作误差从12%降至5%。
+  - 参与RL+前馈复合控制架构实现，负责关节力矩控制模块，动态行走能耗降低18%。
+])
+
+#v(0.45em)
+#panel("荣誉证书", [
+  - 2023.10 全国大学生机器人竞赛（RoboMaster）机甲大师赛，国家级二等奖
+  - 2023.05 北京市大学生机械创新设计大赛，省级一等奖
+  - 2022.12 北京理工大学“优秀科研创新奖”，校级
+  - 2022.06 北京理工大学机器人控制算法竞赛，院级一等奖
 ])
