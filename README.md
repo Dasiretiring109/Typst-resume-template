@@ -1,96 +1,188 @@
-# Typst 中文简历模板（给非开发者）
+# Typst 中文简历模板库（含 12 个参考项目仿制版）
 
-这是一个可以直接改内容、导出 PDF 的简历模板库。  
-你不需要会编程，按下面步骤操作即可。
+这个仓库现在包含两类模板：
+- 通用模板（原有）
+- 参考项目仿制模板（按你给的链接逐个做了一份）
 
-## 先看文件夹
+## 目录结构
 
 ```text
 Typst-resume-template/
-├─ typ/      简历模板（在这里改文字）
+├─ typ/      模板文件（直接改这里）
 ├─ images/   头像图片（可选）
-├─ pdf/      导出的 PDF（最终投递文件）
+├─ pdf/      导出的 PDF（建议输出到这里）
 └─ README.md
 ```
 
-## 三个模板怎么选
+## 模板总览
 
-- `typ/no_profile_picture.typ`：无头像，简洁稳妥，投递系统友好。
-- `typ/with_profile_picture.typ`：有头像，信息完整。
-- `typ/resume_classic_with_photo.typ`：有头像，偏传统版式。
+### A. 通用模板（原有）
 
-## 模板效果预览
+- `typ/no_profile_picture.typ`
+- `typ/with_profile_picture.typ`
+- `typ/resume_classic_with_photo.typ`
+- `typ/sidebar_tech_blue.typ`
+- `typ/minimal_ats.typ`
+- `typ/color_cards.typ`
+- `typ/newspaper_two_column.typ`
+- `typ/ribbon_section_blocks.typ`
+- `typ/bracket_index_titles.typ`
+- `typ/split_banner_titles.typ`
+- `typ/side_label_titles.typ`
 
-<p align="center">
-  <img src="images/no_profile_picture_page_1.png" alt="无头像模板预览" width="32%">
-  <img src="images/with_profile_picture_page_1.png" alt="有头像模板预览" width="32%">
-  <img src="images/resume_classic_with_photo_page_1.png" alt="经典有头像模板预览" width="32%">
-</p>
+### B. 参考项目仿制模板（新增 12 份）
 
-## 5 分钟使用流程
+- `typ/ref_golixp_resume_zh_cn.typ`
+  - 参考：<https://typst.app/universe/package/golixp-resume-zh-cn/>
+  - 特征：中文模块化、时间线/信息块风格
 
-1. 安装 VS Code。
-2. 在 VS Code 扩展里安装 `Tinymist Typst`。
-3. 打开本项目文件夹。
-4. 打开你要用的模板（`typ/` 里的 `.typ` 文件）。
-5. 直接替换里面的姓名、电话、邮箱、教育经历、项目经历等内容。
-6. 如果要头像，把头像文件放到 `images/` 目录，文件名建议保持 `image.png`。
-7. 在 Typst 预览里导出 PDF，并保存到 `pdf/` 目录。
+- `typ/ref_typst_project_rw1SLr0IIZZnCrkrsypRQF.typ`
+  - 参考：<https://typst.app/project/rw1SLr0IIZZnCrkrsypRQF>
+  - 特征：卡片化与双色分区风格（按公开预览思路做的可编辑版本）
 
-## 头像放置规则
+- `typ/ref_uniquecv_typst.typ`
+  - 参考：<https://github.com/gaoachao/uniquecv-typst>
+  - 特征：蓝色标题线、中文学术简历风格
 
-- 推荐路径：`images/image.png`
-- 模板里头像写法应为：
+- `typ/ref_typst_cv_miku.typ`
+  - 参考：<https://github.com/ice-kylin/typst-cv-miku>
+  - 特征：轻量图标/emoji 分段、年轻化布局
 
-```typst
-#image("../images/image.png", width: 26mm, height: auto)
+- `typ/ref_alta_typst.typ`
+  - 参考：<https://github.com/GeorgeHoneywood/alta-typst>
+  - 特征：双栏排版、技能评分点
+
+- `typ/ref_attractive_typst_resume.typ`
+  - 参考：<https://github.com/Harkunwar/attractive-typst-resume>
+  - 特征：彩色标题块 + 左侧栏
+
+- `typ/ref_moderncv_typst.typ`
+  - 参考：<https://github.com/giovanniberti/moderncv.typst>
+  - 特征：左侧日期盒 + 右侧正文
+
+- `typ/ref_resume_typ.typ`
+  - 参考：<https://github.com/wusyong/resume.typ>
+  - 特征：极简线条、Small Caps 标题
+
+- `typ/ref_chicv.typ`
+  - 参考：<https://github.com/skyzh/chicv>
+  - 特征：简洁单栏 + 分段横线
+
+- `typ/ref_bamboovir_typst_resume_template.typ`
+  - 参考：<https://github.com/bamboovir/typst-resume-template>
+  - 特征：大号姓名标题 + 线性章节
+
+- `typ/ref_brilliant_cv.typ`
+  - 参考：<https://github.com/yunanwg/brilliant-CV>
+  - 特征：现代化模块、信息标签风格
+
+- `typ/ref_chinese_resume_in_typst.typ`
+  - 参考：<https://github.com/OrangeX4/Chinese-Resume-in-Typst>
+  - 特征：中文优先、侧栏与分段组件
+
+## 快速使用
+
+1. 打开任意 `typ/*.typ` 文件。
+2. 替换姓名、电话、邮箱、教育/项目经历。
+3. 导出 PDF。
+
+示例：
+
+```bash
+typst compile typ/ref_uniquecv_typst.typ pdf/ref_uniquecv_typst.pdf
 ```
 
-如果你改成了别的文件名，比如 `my_photo.jpg`，就把模板中的路径同步改成：
+批量编译所有仿制模板：
 
-```typst
-#image("../images/my_photo.jpg", width: 26mm, height: auto)
+```bash
+mkdir -p pdf
+for f in typ/ref_*.typ; do
+  name=$(basename "${f%.typ}")
+  typst compile "$f" "pdf/${name}.pdf"
+done
 ```
 
-## 每次改简历时，照这个顺序
+## 依赖安装
 
-1. 打开 `typ/` 里的模板文件。
-2. 只改文字内容，不改排版代码（除非你知道自己在做什么）。
-3. 导出 PDF 到 `pdf/`。
-4. 打开导出的 PDF 快速检查一遍（错别字、时间、联系方式、分页）。
+### 1) Typst CLI
 
-## 常见问题（直接照做）
+macOS（Homebrew）：
 
-### 1. 报错：`unknown font family`
-
-原因：系统没有这个字体。  
-处理：把模板里的字体改成你电脑有的字体，推荐保留：
-
-```typst
-#set text(font: ("Noto Sans CJK SC"), size: 10.5pt, lang: "zh")
+```bash
+brew install typst
 ```
 
-### 2. 报错：`image not found`
+跨平台（已安装 Rust/Cargo）：
 
-按顺序检查：
-
-1. 头像是否真的在 `images/` 目录。
-2. 文件名是否和模板里完全一致（大小写也要一致）。
-3. 模板里的路径是否是 `../images/xxx`。
-
-### 3. 没看到预览窗口
-
-在 VS Code 按 `Ctrl+Shift+P`，输入并执行：`Typst: Open Preview`。
-
-### 4. 信息太长错行了
-
-```typst
-columns: (1fr, 1fr, 2fr),
+```bash
+cargo install --locked typst-cli
 ```
-这段代码的含义就是下面信息分为三部分以及每部分的比例为1：1：2，如果错行了就放大对应的部分
 
-## 给小白的建议
+VS Code 插件：`Tinymist Typst`
 
-- 第一次使用，优先选 `no_profile_picture.typ`，最不容易出错。
-- 一次只改一个模块，改完就导出 PDF 检查。
-- 最终投递前，统一用 `pdf/` 里的文件。
+### 2) 字体下载与安装（命令版）
+
+> 下面命令覆盖了这些参考模板常见字体：
+> Noto/Source Han CJK、IBM Plex、Roboto、Source Sans、Mulish、Nerd Font Symbols。
+
+下载到项目内 `fonts/`：
+
+```bash
+mkdir -p fonts && cd fonts
+
+curl -L -o source-han-sans-sc.zip \
+  https://github.com/adobe-fonts/source-han-sans/releases/latest/download/SourceHanSansSC.zip
+
+curl -L -o source-han-serif-cn.zip \
+  https://github.com/adobe-fonts/source-han-serif/releases/latest/download/12_SourceHanSerifCN.zip
+
+curl -L -o nerd-font-symbols.zip \
+  https://github.com/ryanoasis/nerd-fonts/releases/latest/download/NerdFontsSymbolsOnly.zip
+
+curl -L -o roboto.zip "https://fonts.google.com/download?family=Roboto"
+curl -L -o source-sans-3.zip "https://fonts.google.com/download?family=Source%20Sans%203"
+curl -L -o source-sans-pro.zip "https://fonts.google.com/download?family=Source%20Sans%20Pro"
+curl -L -o mulish.zip "https://fonts.google.com/download?family=Mulish"
+curl -L -o ibm-plex-sans.zip "https://fonts.google.com/download?family=IBM%20Plex%20Sans"
+curl -L -o ibm-plex-serif.zip "https://fonts.google.com/download?family=IBM%20Plex%20Serif"
+curl -L -o ibm-plex-mono.zip "https://fonts.google.com/download?family=IBM%20Plex%20Mono"
+```
+
+安装到 Linux 用户字体目录（可选）：
+
+```bash
+mkdir -p ~/.local/share/fonts/typst-resume
+for z in fonts/*.zip; do
+  unzip -o "$z" -d ~/.local/share/fonts/typst-resume
+done
+fc-cache -f -v
+```
+
+### 3) `typst-cv-miku` 里提到的 `kpfonts`（可选）
+
+如果你要尽量贴近该项目原效果：
+
+```bash
+# 需要 TeX Live
+tlmgr install kpfonts
+```
+
+## 常见问题
+
+### 1. `unknown font family`
+
+系统没装对应字体。先执行上面的字体下载与安装命令，或者把模板中的字体改成你机器已有字体。
+
+### 2. `image not found`
+
+检查头像路径与文件名是否一致，建议使用 `images/image.png`。
+
+### 3. 看不到预览
+
+在 VS Code 执行 `Typst: Open Preview`。
+
+## 说明
+
+- 新增的 12 个 `ref_*.typ` 是“风格仿制版”，目标是便于你在本仓库统一维护与二次修改。
+- 为了减少环境差异，模板都设置了字体回退列表；若你已安装对应字体，显示会更接近参考项目。
+- 如果未安装推荐字体，`typst compile` 可能给出 `unknown font family` warning，但模板仍可正常编译。
